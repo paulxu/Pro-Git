@@ -37,16 +37,6 @@ https://help.github.com/articles/github-flavored-markdown
 
 
 
-
-How about we throw some angle braces and ampersands in there?
-
-  <div class="footer">
-       &copy; 2004 Foo Corporation
-  </div>
-
-Set in stone
-------------
-
 Preformatted blocks are useful for ASCII art:
 
 <pre>
@@ -61,6 +51,7 @@ Preformatted blocks are useful for ASCII art:
      |
      | -hrr-
   ___|_____________
+  
 </pre>
 
 Playing the blame game
