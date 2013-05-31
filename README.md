@@ -37,23 +37,6 @@ https://help.github.com/articles/github-flavored-markdown
 
 
 
-Preformatted blocks are useful for ASCII art:
-
-<pre>
-             ,-.
-    , ,-. ,-.
-   / \ ( )-( )
-   \ | ,.>-( )-<
-    \|,' ( )-( )
-     Y ___`-' `-'
-     |/__/ `-'
-     |
-     |
-     | -hrr-
-  ___|_____________
-  
-</pre>
-
 Playing the blame game
 ----------------------
 
