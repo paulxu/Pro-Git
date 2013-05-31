@@ -1,0 +1,110 @@
+http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup
+
+.git/config (dir level) >  ~/.gitconfig (user level, git --global) > /etc/gitconfig (all users, git --system)
+
+
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global core.editor emacs
+git config --global merge.tool vimdiff
+
+# show conf
+git config --list
+git config user.name
+
+# get help
+git help config
+
+
+http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
+
+# this creates .git dir
+git init
+git add *.c
+git add README
+git commit -m 'initial project version'
+
+# create dir named "grit"
+git clone git://github.com/schacon/grit.git
+# give the dir a different name
+git clone git://github.com/schacon/grit.git mygrit
+
+
+git status
+touch README
+# staging the file
+git add README
+
+!!! Staging Modified Files
+# If you modify a file after you run git add, you have to run git add again to stage the latest version of the file
+
+--------
+!!!
+vi .gitignore
+
+*.[oa]
+*~
+
+# a comment - this is ignored
+
+# no .a files
+*.a
+# !<file>, not exclude
+# track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the root TODO file, not <subdir>/TODO
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .txt files in the doc/ directory
+doc/**/*.txt
+
+------
+!!! 3 levels:
+working copy(unstaged)
+staged(=index, for the next commit)
+committed(default to HEAD)
+
+# compare HEAD to working(unstaged)
+git diff
+# compare HEAD to staged
+git diff --staged (= --cached)
+
+git commit
+git config --global core.editor vim
+# add "diff" output to the comment file
+git commit -v
+git commit -m "Story 182: Fix benchmarks for speed"
+# add, commit in one step
+git commit -a -m 'added new benchmarks'
+
+---------
+
+# stage the delete(but keep the work copy), exclude from next commit
+git rm log/\*.log
+git rm \*~
+
+# reverse "git add"
+git rm --cached readme.txt
+
+# rm from both the working tree and the index
+git rm -f 
+
+---------
+# rename file for next commit
+git mv file_from file_to
+
+# Show commit histroy
+git log
+# gen patch
+git log -p -2
+# gen diff -U
+git log -U1 --word-diff
+git log --stat
+
