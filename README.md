@@ -18,8 +18,11 @@ file > source code control > checkout
     https://github.com/paulxu/Pro-Git.git
     /tmp
 \# local commit
+
 file > source code control > commit changes
+
 \# update github
+
 file > source code control > push
 
 ~/.netrc
