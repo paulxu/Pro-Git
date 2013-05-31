@@ -23,3 +23,12 @@ https://github.com/paulxu/Pro-Git.git
 file > source code control > commit changes (local commit)
 
 
+file > source code control > push (update github)
+
+~/.netrc
+
+machine github.com
+
+       login <user>
+       
+       password <password>
