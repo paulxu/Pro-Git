@@ -9,3 +9,13 @@ git init
 
 git pull git@github.com:paulxu/Pro-Git.git
 
+-----
+Integration with Komodo IDE, version 8.0.2, build 78971
+
+file > source code control > checkout
+
+git
+https://github.com/paulxu/Pro-Git.git
+/tmp
+
+
