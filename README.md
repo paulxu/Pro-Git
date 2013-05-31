@@ -26,9 +26,9 @@ file > source code control > push (update github)
 
 machine github.com
 
-    login <user>
+ login <user>
     
-    password <password>
+ password <password>
     
 -----
 Note:
