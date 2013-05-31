@@ -38,34 +38,14 @@ https://help.github.com/articles/github-flavored-markdown
 
 
 
-
-What about some code **in** a list? That's insane, right?
-
-1. In Ruby you can map like this:
-
-       ['a', 'b'].map { |x| x.uppercase }
-
-2. In Rails, you can do a shortcut:
-
-       ['a', 'b'].map(&:uppercase)
-
-Some people seem to like definition lists
-
-<dl>
-  <dt>Lower cost</dt>
-  <dd>The new version of this product costs significantly less than the previous one!</dd>
-  <dt>Easier to use</dt>
-  <dd>We've changed the product so that it's much easier to use!</dd>
-</dl>
-
 I am a robot
 ------------
 
 Maybe you want to print `robot` to the console 1000 times. Why not?
 
-    def robot_invasion
-      puts("robot " * 1000)
-    end
+  def robot_invasion
+   puts("robot " * 1000)
+  end
 
 You see, that was formatted as code because it's been indented by four spaces.
 
