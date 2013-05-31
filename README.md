@@ -8,32 +8,25 @@ http://git-scm.com/book
 git init  
 
 git pull git@github.com:paulxu/Pro-Git.git
-
 -----
 Integration with Komodo IDE, version 8.0.2, build 78971
 
 file > source code control > checkout
 
 git
-
 https://github.com/paulxu/Pro-Git.git
-
 /tmp
 
 file > source code control > commit changes (local commit)
-
 
 file > source code control > push (update github)
 
 ~/.netrc
 
 machine github.com
-
        login <user>
-       
        password <password>
-
-
+       
 -----
 Note:
 https://help.github.com/articles/github-flavored-markdown
@@ -42,6 +35,7 @@ https://help.github.com/articles/github-flavored-markdown
 GitHub Flavored Markdown
 ================================
 
+# 斜体 "* *“
 *View the [source of this content](http://github.github.com/github-flavored-markdown/sample_content.html).*
 
 Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:
