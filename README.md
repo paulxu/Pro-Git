@@ -32,3 +32,8 @@ machine github.com
        login <user>
        
        password <password>
+
+
+-----
+Note:
+https://help.github.com/articles/github-flavored-markdown
