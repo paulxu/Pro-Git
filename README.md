@@ -43,11 +43,11 @@ What about some code **in** a list? That's insane, right?
 
 1. In Ruby you can map like this:
 
-        ['a', 'b'].map { |x| x.uppercase }
+       ['a', 'b'].map { |x| x.uppercase }
 
 2. In Rails, you can do a shortcut:
 
-        ['a', 'b'].map(&:uppercase)
+       ['a', 'b'].map(&:uppercase)
 
 Some people seem to like definition lists
 
