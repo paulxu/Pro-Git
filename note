@@ -2,7 +2,7 @@ http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup
 
 .git/config (dir level) >  ~/.gitconfig (user level, git --global) > /etc/gitconfig (all users, git --system)
 
-
+# user level
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 git config --global core.editor emacs
@@ -18,7 +18,7 @@ git help config
 
 http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 
-# this creates .git dir
+# this creates .git subdir under current dir
 git init
 git add *.c
 git add README
