@@ -85,7 +85,7 @@ git diff
 git diff --staged (= --cached)
 
 git commit
-git config --global core.editor vim
+
 # add "diff" output to the comment file
 git commit -v
 git commit -m "Story 182: Fix benchmarks for speed"
@@ -94,11 +94,11 @@ git commit -a -m 'added new benchmarks'
 
 ---------
 
-# stage the delete(but keep the work copy), exclude from next commit
+# staging the delete(but keep the work copy), exclude from next commit
 git rm log/\*.log
 git rm \*~
 
-# reverse "git add"
+# un-staging a file
 git rm --cached readme.txt
 
 # rm from both the working tree and the index
@@ -106,13 +106,18 @@ git rm -f
 
 ---------
 # rename file for next commit
+# equal to "mv, git rm, git add"
 git mv file_from file_to
 
 # Show commit histroy
 git log
-# gen patch
+# -p, show diff, -2, last 2 commits
 git log -p -2
 # gen diff -U
 git log -U1 --word-diff
 git log --stat
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --pretty=format:"%h %s" --graph
 
+HERE:
+http://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History
