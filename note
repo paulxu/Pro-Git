@@ -1,6 +1,8 @@
 http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup
 
-.git/config (dir level) >  ~/.gitconfig (user level, git --global) > /etc/gitconfig (all users, git --system)
+!!! working copy <--> staging <--> local repository <--> remote repository
+
+.git/config (top dir level) >  ~/.gitconfig (user level, git config --global) > /etc/gitconfig (all users, git config --system)
 
 # user level
 git config --global user.name "John Doe"
@@ -13,17 +15,21 @@ git config --list
 git config user.name
 
 # get help
-git help config
+git help <verb>
+git <verb> --help
+man git-<verb>
 
 
 http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 
+# to track an existing project in Git, go to the top level of the project’s directory
 # this creates .git subdir under current dir
 git init
 git add *.c
 git add README
 git commit -m 'initial project version'
 
+# this is a clone(everything), not checkout
 # create dir named "grit"
 git clone git://github.com/schacon/grit.git
 # give the dir a different name
@@ -32,11 +38,8 @@ git clone git://github.com/schacon/grit.git mygrit
 
 git status
 touch README
-# staging the file
+# staging any new/modified file, before you can commit it to the local repository
 git add README
-
-!!! Staging Modified Files
-# If you modify a file after you run git add, you have to run git add again to stage the latest version of the file
 
 --------
 !!!
@@ -69,10 +72,15 @@ doc/**/*.txt
 !!! 3 levels:
 working copy(unstaged)
 staged(=index, for the next commit)
-committed(default to HEAD)
+committed(default to HEAD, local repository)
 
+working <--> staged <--> local repository
+
+# |<--             git diff           -->|
 # compare HEAD to working(unstaged)
 git diff
+
+#              |<-- git diff --staged  ->|
 # compare HEAD to staged
 git diff --staged (= --cached)
 
