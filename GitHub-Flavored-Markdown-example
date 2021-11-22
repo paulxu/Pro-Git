@@ -1,3 +1,8 @@
+## newline
+a\
+b\
+c
+
 # "\n====", highlight previous line, and add a seperate line
 GitHub Flavored Markdown
 ================================
